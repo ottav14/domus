@@ -1,35 +1,24 @@
 import Image from 'next/image';
 import styles from "./page.module.css";
 import Post from "./components/Post/Post.tsx";
+import Images from "./components/Images/Images.tsx";
 
 export default function Home() {
   return (
 	<main className={styles.main}>
 		<div className={styles.scanline} />
 		<div className={styles.titleContainer}>
-			<p className={styles.pageTitle}>Stuff By Dom</p>
+			<p className={styles.pageTitle}>Domus</p>
 			<div className={styles.cursor} />
 		</div>
 		<div className={styles.content}>
 			<p className={styles.paragraph}>
-				Hello potential employer, friend, family-member or
-				nerd. This site was made by me, Dom Ottaviano.
+				Hello. This is a dev-log site made by Dom Ottaviano.
 				The point of this site is to have a place to host,
-				display, and discuss things I have made. With the
-				hope that I can one day be paid to do similar things.
+				display, and discuss things I have made. 
 				If you wish to contact me for any reason you can
 				reach me best at dominicjottaviano@gmail.com. 
 				Thank you.
-			</p>
-			<p className={styles.paragraph}>
-				As of the time of me writing this, the site
-				will be formatted as follows: everything following
-				this message will be a dev-log post discussing
-				a project I am, or previously was working on.
-				They will be given in reverse chronological order, 
-				most recent to least. Further changes will be made
-				in the future to make finding specific posts
-				more convienient.
 			</p>
 			<Post title="Post 1: Welcome" date="10/10/2024">
 				This is the first post to be put on here. I'm still working
@@ -50,13 +39,7 @@ export default function Home() {
 				do for now. The image that follows is a screenshot of the site
 				as it is at the time of me writing this.	
 			</Post>
-			<div className={styles.firstPostImage}>
-				<Image 
-					src="/images/first-post.png" 
-					width={800}
-					height={400}
-				/>
-			</div>
+			<Images file="/images/first-post.png" />
 			<Post title="Post 2: Beerbrot" date="10/11/2024">
 				Beerbrot is a small shader project I've been working on for the
 				past week or so. I've been programming with varying degrees of
@@ -78,7 +61,8 @@ export default function Home() {
 				for running shaders. The github repo for this project can be found
 				<a className={styles.githubLink} href="https://github.com/ottav14/beerbrot"> here</a>
 			</Post>
-
+			<Images file="/images/brot1.png" />
+			<Images file="/images/brot2.png" />
 		</div>
 	</main>
   );

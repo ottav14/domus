@@ -52,16 +52,9 @@
 .titleContainer {
 	position: relative;
 	padding-top: 4rem;
-	font-size: 36pt;
+	font-size: 48pt;
 	color: #0f0; 
 	text-shadow: 0 0 15pt #0f0;
-}
-
-.firstPostImage {
-	display: flex;
-	justify-content: center;
-	padding-top: 3rem;
-	padding-bottom: 3rem;
 }
 
 @keyframes moveScanline {
