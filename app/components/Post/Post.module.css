@@ -1,0 +1,15 @@
+
+.main {
+	color: #fff;
+	padding-bottom: 3rem;
+}
+
+.postTitle {
+	color: #0f0;
+	text-shadow: 0 0 15pt #0f0;
+	padding-bottom: 0.3rem;
+}
+
+.postDate {
+	padding-bottom: 1.5rem;
+}
