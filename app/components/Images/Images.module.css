@@ -47,11 +47,19 @@
 
 .leftButton {
 	position: absolute;
-	bottom: 0;
-	right: 0;
-	width: 90px;
+	bottom: 10pt;
+	right: 30pt;
+	width: 30px;
 	height: 30px;
-	background-color: #00f;
+	opacity: 0;
+}
+
+.rightButton {
+	position: absolute;
+	bottom: 10pt;
+	right: 8pt;
+	width: 30px;
+	height: 30px;
 	opacity: 0;
 }
 
@@ -63,3 +71,6 @@
 	animation: uiFade 0.3s forwards;
 }
 
+.player:hover .rightButton {
+	animation: uiFade 0.3s forwards;
+}

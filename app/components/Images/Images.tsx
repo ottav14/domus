@@ -1,5 +1,7 @@
 import styles from "./Images.module.css";
 import Image from 'next/image';
+import forwardArrow from "../../../public/icons/arrow-forward.svg";
+import backArrow from "../../../public/icons/arrow-back.svg";
 
 const Images = ({ file }) => {
   return (
@@ -12,7 +14,14 @@ const Images = ({ file }) => {
 				className={styles.img}
 			/>
 			<div className={styles.playerBackground} />
-			<div className={styles.leftButton} />
+			<Image
+				src={forwardArrow}
+				className={styles.rightButton}
+			/>
+			<Image
+				src={backArrow}
+				className={styles.leftButton}
+			/>
 		</div>
     </div>
   );
