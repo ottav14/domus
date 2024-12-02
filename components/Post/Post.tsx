@@ -1,6 +1,12 @@
 import styles from "./Post.module.css";
 
-const Page = ({ title, date, content, children }) => {
+interface PageProps {
+	title: string;
+	date: string;
+	children: React.ReactNode;
+}
+
+const Page: React.FC<PageProps> = ({ title, date, children }) => {
   return (
     <div className={styles.main}>
 		<h2 className={styles.postTitle}>{title}</h2>

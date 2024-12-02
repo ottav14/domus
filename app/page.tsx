@@ -1,7 +1,7 @@
+import Post from "../components/Post/Post.tsx";
+import Images from "../components/Images/Images.tsx";
 import Image from 'next/image';
 import styles from "./page.module.css";
-import Post from "./components/Post/Post.tsx";
-import Images from "./components/Images/Images.tsx";
 
 export default function Home() {
 

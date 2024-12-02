@@ -3,11 +3,15 @@
 import styles from "./Images.module.css";
 import React, { useState } from 'react';
 import Image from 'next/image';
-import forwardArrow from "../../../public/icons/arrow-forward.svg";
-import backArrow from "../../../public/icons/arrow-back.svg";
+import forwardArrow from "../../public/icons/arrow-forward.svg";
+import backArrow from "../../public/icons/arrow-back.svg";
 import Icon from "../Icon/Icon.tsx";
 
-const Images = ({ files }) => {
+interface ImagesProps {
+	files: string[];
+}
+
+const Images: React.FC<ImagesProps> = ({ files }) => {
 
 	const [index, setIndex] = useState(0); 
 	const file = files[index];
@@ -28,6 +32,7 @@ const Images = ({ files }) => {
 			<div className={styles.player}>
 				<Image 
 					src={file}
+					alt="Could not display image"
 					width={800}
 					height={400}
 					className={styles.img}
